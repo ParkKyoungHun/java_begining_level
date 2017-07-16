@@ -2,6 +2,7 @@ package exam02;
 
 public class StringArray2 {
 	int num;
+	
 	public void printStr() {
 		num = 2;
 		System.out.println(num);
