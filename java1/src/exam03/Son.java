@@ -11,7 +11,7 @@ public class Son extends Father{
 	}
 
 	public static void main(String[] args) {
-		Son s = new Son();
+		Father s = new Son();
 		s.doJob();
 		s.printHouse();
 		s.doSleep();
