@@ -6,6 +6,10 @@ import java.util.List;
 public class Execute {
 
 	public void printOption(Car c, String carName) {
+		if(c instanceof Hyundai) {
+			Hyundai h = (Hyundai)c;
+			h.secPm();
+		}
 		c.chioceCar(carName);
 		if(!c.checkCarName()) {
 			System.out.println("선택하신 자동차가 없습니다.");
