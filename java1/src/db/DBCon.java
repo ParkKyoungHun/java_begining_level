@@ -20,7 +20,7 @@ public class DBCon {
 	public DBCon(){
 		try {
 			Class.forName(driver);
-			dBConnecte();
+			this.dBConnecte();
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} catch (SQLException e) {
@@ -40,6 +40,7 @@ public class DBCon {
 			}
 		}
 	}
+	
 	public List<HashMap<String, String>> getListFromTable(String sql){
 		PreparedStatement ps;
 		try {
