@@ -27,6 +27,9 @@ public class DBCon {
 			e.printStackTrace();
 		}
 	}
+	public Connection getCon() {
+		return con;
+	}
 	
 	private void dBConnecte() throws SQLException {
 		con = DriverManager.getConnection(url, id, pwd);
